@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.container{
+			background: #fff;
+			width: 100%;
+		}
+		.landing{
+			overflow: hidden;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform:translate(-50%,-50%);
+			background: yellow;
+			padding: 15px;
+			width: 150px;
+			height: 25px;
+			text-decoration: none;
+			text-align: center;
+			border-radius: 8px;
+			transition: 0.5s;
+			font-weight: bold;
+			color: #000;
+		}
+		.landing:hover:before{
+			top: -10px;
+		}
+		.landing:before{
+			content: 'Welcome';
+			font-weight: bold;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform:translate(-50%,-50%);
+			transition: all 0.5s;
+		}
+		.landing:after{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform:translate(-50%,-50%);
+			content: 'home';
+			font-weight: bold;
+			top: calc(100% + 30px);
+			transition: all 0.5s;
+		}
+
+		.landing:hover:after{
+			top: 50%;
+		}
+	</style>
+	
+</head>
+<script >
+	const click = document.getElementById('click');
+	click.addEventListener('method');
+	function method(){
+		console.log('you click');
+	}
+</script>
+<body>
+	<input type="datetime-local" name="">
+	<input type="time" name="">
+	<div class="container" >
+		<a class="landing" href="#">
+		nelle</a>
+	</div>
+	<div >
+		<a href="" id="click">click me</a>
+	</div>
+</body>
+</html>

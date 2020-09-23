@@ -1,0 +1,123 @@
+/*mobile css stylesheet*/
+@media(max-width: 768px){
+	.content-wrapper .content .content-area{
+		display: flex;
+		flex-direction: column;
+	}
+	.images-and-text{
+		order: 2;
+	}
+	.right-sidebar{
+		order: 1;
+		padding-bottom: 30px;
+		margin-top: -50px;
+	}
+	.right-sidebar img{
+		margin-top: 60px;
+	}
+	.btn{
+		display: flex;
+	}
+	.nav ul{
+		flex-direction: column;
+	}
+	.images-and-text .window2 .service ul{
+		flex-direction: column;
+	}
+
+	.images-and-text .window2 .service ul li{
+		width: 100%;
+	}
+	.images-and-text .window1 p{
+		font-size: 100%;
+	}
+
+	.images-and-text .window1 h2{
+		font-size: 200%;
+	}
+
+	.images-and-text .window1 button{
+		width:75%;
+	}
+	.images-and-text .window2 ul.portfolio li{
+		width: 100%;
+		margin-top:10px;
+		height:100%;
+	}
+
+	.right-sidebar h2{
+		font-size: 100%;
+	}
+	.right-sidebar h3{
+		font-size: 100%;
+		line-height: 2rem;
+	}
+
+	.contactMe{
+		width: 100%;
+		flex-direction: column;
+	}
+	.myInfo{
+		text-align: center;
+	}
+	.myInfo h4{
+		font-size: 100%;
+	}
+
+	#contactForm h2{
+		font-size: 200%;
+		padding: 20px;
+	}
+	#contactForm .nameField{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+}
+	#contactForm .nameField label{
+		color: #fff;
+		font-size: 80%;
+		font-family: arial 'sans-serif';
+	}
+	#contactForm .nameField .name,
+	#contactForm .nameField .lastname,
+	#contactForm .nameField .email{
+		flex: 1;
+		width:100%;
+		border:none;
+		outline: none;
+		padding: 3px;
+		margin-left: 12px;
+		background: none;
+		border-bottom: .5px solid #fff;
+		color: orange;
+		font-weight: 200%;
+		font-size: 150%;
+		font-family: arial 'sans-serif';
+
+	}
+	#contactForm .nameField .message{
+		width:100%;
+		border:none;
+		outline: none;
+		margin-left: 12px;
+		background: none;
+		color: orange;
+		border: .5px solid #fff;
+		font-size: 150%;
+	}
+
+
+
+
+	
+}
+/*for 500px or higher*/
+@media(max-width: 560px){
+	body{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+
+}
